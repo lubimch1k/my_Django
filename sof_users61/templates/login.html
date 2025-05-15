@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход в аккаунт</title>
+</head>
+<body>
+<h1>Войти в аккаунт</h1>
+<form method="post" action="/user/login"></form>
+    {{ form.hidden_tag() }}
+    {{ form.email.label }}
+    {{ form.email }}
+    {{ form.password.label }}
+    {{ form.password }}
+    {{ form.button }}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+<h1> Регистрация </h1>
+<form method="post" action="/user/registration">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} <br>
+    {{ form.name }} <br>
+    {{ form.email.label }} <br>
+    {{ form.email }} <br>
+    {{ form.password1.label }} <br>
+    {{ form.password1 }} <br>
+    {{ form.password2.label }} <br>
+    {{ form.password2 }} <br>
+    {{ form.button }} <br>
+</form>
+</body>
+</html>
